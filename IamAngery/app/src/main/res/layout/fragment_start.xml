@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shishuheng.iamangery.StartFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="光棍节，互相伤害啊！"
+        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="©2016.11.11"
+            android:id="@+id/textView2" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:id="@+id/startbutton"
+            app:srcCompat="@drawable/startgane"
+            android:layout_weight="0.17"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="a shishuheng's game"
+            android:id="@+id/textView"
+            android:layout_below="@+id/startbutton"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"
+            android:text="How to Play"
+            android:textSize="20dp"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp" />
+    </RelativeLayout>
+
+</LinearLayout>
